@@ -141,7 +141,7 @@ public class SBinTre<T> {
                 }
             }
         }
-
+        return antallVerdi;
     }
 
     public void nullstill() {
