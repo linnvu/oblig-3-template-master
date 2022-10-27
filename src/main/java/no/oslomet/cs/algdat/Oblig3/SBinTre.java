@@ -113,12 +113,35 @@ public class SBinTre<T> {
         throw new UnsupportedOperationException("Ikke kodet ennå!");
     }
 
+
     public int fjernAlle(T verdi) {
         throw new UnsupportedOperationException("Ikke kodet ennå!");
     }
 
     public int antall(T verdi) {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        int antallVerdi = 0;
+
+        if (tom()) {
+
+        }
+        else if (inneholder(verdi)){
+            Node<T> q = rot;
+
+            while (q != null){
+                int sammenligning = comp.compare(verdi, q.verdi);
+
+                if (sammenligning > 0) {
+                    q = q.høyre;
+                }else if (sammenligning == 0){
+                    q = q.høyre;
+                    antallVerdi ++;
+                }
+                else {
+                    q = q.venstre;
+                }
+            }
+        }
+
     }
 
     public void nullstill() {
