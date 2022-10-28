@@ -154,7 +154,7 @@ public class SBinTre<T> {
                 p = p.venstre;
 
             }else if (p.høyre != null){
-                p = p.høyre;
+                p =  p.høyre;
             }else {
                 return  p;
             }
